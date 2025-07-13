@@ -38,12 +38,14 @@ restaurant_system/
 │   ├── order.dart              # Order details
 │   └── inventory_item.dart     # Inventory tracking
 ├── services/                   # Business logic
+│   ├── branch_service.dart     # Branches list  
 │   ├── auth_service.dart       # Authentication and role management
 │   ├── menu_service.dart       # Menu operations
 │   ├── table_service.dart      # Table booking and status
 │   ├── order_service.dart      # Order processing
 │   ├── billing_service.dart    # Billing and invoice generation
 │   ├── inventory_service.dart  # Inventory management
+│   ├── tranfer_service.dart    # Resources Tansfer to different branches   
 │   └── report_service.dart     # Sales and financial reporting
 ├── utils/                      # Helper utilities
 │   ├── file_handler.dart       # JSON/CSV file operations
