@@ -648,16 +648,16 @@ Future<void> _cashierMainMenu() async {
     final choice = _showMenu(options);
 
     switch (choice) {
-      case 2:
+      case 1:
         await _takeattendance();
         break;
-      case 3:
+      case 2:
         await _viewActiveOrders();
         break;
-      case 4:
+      case 3:
         await _generateBill();
         break;
-      case 5:
+      case 4:
         _confirmExit();
         break;
     }
