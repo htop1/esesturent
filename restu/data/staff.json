@@ -1,0 +1,26 @@
+[{
+        "id": "EMP001",
+        "name": "Santosh Adhikari",
+        "role": "Manager",
+        "branch": "Butwal"
+    },
+    {
+        "id": "EMP002",
+        "name": "Yashu Dangi",
+        "role": "Manager",
+        "branch": "Kathamandu"
+    },
+    {
+        "id": "EMP003",
+        "name": "Sulochana pokhrel",
+        "role": "Manager",
+        "branch": "Dang"
+    },
+
+    {
+        "id": "EMP004",
+        "name": "Vihaan Shrestha",
+        "role": "Manager",
+        "branch": "pokhara"
+    }
+]

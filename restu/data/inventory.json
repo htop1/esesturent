@@ -1,0 +1,22 @@
+{
+"items":[
+    {"name":"Flour","quantity":50,"unit":"kg"},
+    {"name":"Milk","quantity":25,"unit":"liters"},
+    {"name":"Bread","quantity":100,"unit":"pcs"},
+    {"name":"Yogurt","quantity":15,"unit":"liters"},
+    {"name":"Cheese","quantity":20,"unit":"kg"},
+    {"name":"Tomato","quantity":30,"unit":"kg"},
+    {"name":"Onion","quantity":15,"unit":"kg"},
+    {"name":"Eggs","quantity":100,"unit":"pcs"},
+    {"name":"Chicken","quantity":25,"unit":"kg"},
+    {"name":"Rice","quantity":40,"unit":"kg"},
+    {"name":"Pasta","quantity":35,"unit":"kg"},
+    {"name":"Salt","quantity":10,"unit":"kg"},
+    {"name":"Sugar","quantity":20,"unit":"kg"},
+    {"name":"Butter","quantity":15,"unit":"kg"},
+    {"name":"Oil","quantity":30,"unit":"liters"},
+    {"name":"Pepper","quantity":5,"unit":"kg"},
+    {"name":"Garlic","quantity":8,"unit":"kg"},
+    {"name":"Potato","quantity":12,"unit":"kg"}
+]
+}
