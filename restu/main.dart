@@ -137,8 +137,14 @@ Future<void> _takeattendance() async {
 }
 
 /*SUBOPERATION FOR ATTENDANCE*/
-Future<void> _checkin() async {}
-Future<void> _checkout() async {}
+Future<void> _checkin() async {
+  print("you are checked in successfully! ✅");
+  // Here you can implement the actual check-in logic, e.g., updating a database 
+}
+Future<void> _checkout() async {
+  print("you are checked out successfully! ✅");
+  // Here you can implement the actual check-out logic, e.g., updating a database 
+}
 
 /*OPERATION OF MENUMANAGEMENT*/
 Future<void> _menuManagement() async {
