@@ -301,7 +301,7 @@ Future<void> _viewActiveOrders() async {
 
 /* OPERATION OF INVENTORY MANAGEMENT BY ADMIN*/
 Future<void> _inventoryManagement() async {
-  const branch = 'lisbon'; // Or make this dynamic based on user selection
+  const branch = 'Butwal'; // Or make this dynamic based on user selection
   const options = [
     'View Inventory',
     'Add Inventory Item',
@@ -363,7 +363,7 @@ Future<void> _addInventoryItem(String branch) async {
   try {
     await InventoryService.addItem(
       branch,
-      InventoryItem(item: item, quantity: quantity, unit: unit),
+      InventoryItem(item: $item, quantity: quantity, unit: unit),
     );
     print('\nItem added to inventory! ✅');
   } catch (e) {
@@ -397,9 +397,12 @@ Future<void> _updateInventoryItem(String branch) async {
     'Enter quantity change (+ to add, - to subtract):',
   );
 
+  
+  
   try {
     await InventoryService.updateQuantity(branch, itemName, adjustment);
-    final newQuantity = currentItem.quantity + adjustment;
+    final new1Quantity = currentItem.quantity + adjustment;
+    final new2Quantity = currentItem.quantity - adjustment;
     print(
       '\n✅ Updated: ${currentItem.item} = $newQuantity ${currentItem.unit}',
     );
