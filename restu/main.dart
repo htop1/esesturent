@@ -641,6 +641,15 @@ Future<void> _handleTransfer() async {
       staffId: staffId, // Now using entered staff ID
       notes: notes,
     );
+       _clearScreen();
+     print('''
+        ██████╗  ██████╗ ███╗   ██╗███████╗
+        ██╔══██╗██╔═══██╗████╗  ██║██╔════╝
+        ██║  ██║██║   ██║██╔██╗ ██║█████╗  
+        ██║  ██║██║   ██║██║╚██╗██║██╔══╝  
+        ██████╔╝╚██████╔╝██║ ╚████║███████╗
+        ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+        Transfer successful! ✅''');
   } catch (e) {
     print('\n❌ Error: ${e.toString()}');
   }
