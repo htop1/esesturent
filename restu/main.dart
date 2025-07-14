@@ -392,33 +392,41 @@ Future<void> _updateInventoryItem(String branch) async {
   );
 
   // Show current quantity
+   // Show current quantity
   final currentItem = inventory.firstWhere(
     (i) => i.item.toLowerCase() == itemName.toLowerCase(),
   );
-  final adjustment = _promptForInt(
-    'Enter quantity change (+ to add, - to subtract):',
-  );
+  print('\n1. Add quantity');
+  print('2. Subtract quantity');
+  final choice = _promptForInt('Enter your choice (1 or 2):');
+  final quantity = _promptForInt('Enter quantity:');
 
-  try {
-    await InventoryService.updateQuantity(branch, itemName, adjustment);
-    int newQuantity;
-    // Calculate new quantity based on adjustment
-    switch (adjustment.sign) {
-      case 1: // Positive adjustment
-        newQuantity = currentItem.quantity + adjustment.abs();
-        break;
-      case -1: // Subtracting quantity
-        if (currentItem.quantity < adjustment.abs()) {
-          throw Exception('Insufficient stock to subtract $adjustment');
-        }
-        newQuantity = currentItem.quantity - adjustment.abs();
-        break;
-      default:
-        newQuantity = currentItem.quantity; // No change
-    }
-    print(
-      '\n✅ Updated: ${currentItem.item} = $newQuantity ${currentItem.unit}',
-    );
+try {
+  int adjustment;
+  int newQuantity;
+
+  switch (choice) {
+    case 1:
+      adjustment = quantity;
+      newQuantity = currentItem.quantity + quantity;
+      break;
+    case 2:
+      adjustment = -quantity;
+      newQuantity = currentItem.quantity - quantity;
+      break;
+    default:
+      throw Exception('Invalid choice. Please enter 1 or 2.');
+  }
+  
+  await InventoryService.updateQuantity(
+    branch,
+    itemName,
+    adjustment,
+  );
+  print(
+    '\n✅ Updated: ${currentItem.item} = $newQuantity ${currentItem.unit}',
+  );
+  
   } catch (e) {
     print('\n❌ Error: ${e.toString()}');
   }
