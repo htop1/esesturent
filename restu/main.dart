@@ -456,7 +456,7 @@ Future<void> _removeInventoryItem(String branch) async {
 Future<void> _reportManagement() async {
   const options = ['Daily Sales Report', 'Inventory Report', 'Back'];
   // You might want to make this dynamic based on available branches
-  const branch = 'lisbon'; // Or get this from user input
+  const branch = 'Kathmandu'; // Or get this from user input
 
   while (true) {
     _clearScreen();
@@ -885,13 +885,13 @@ void _printWelcome() {
 ███████║██║ ╚═╝ ██║██║  ██║██║   ██║       ██║  ██║███████╗███████║   ██║   ██║  ██║╚██████╔╝██║  ██║██║  ██║██║ ╚████║   ██║   
 ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝       ╚═╝  ╚═╝╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝  
                                                                                                                ★ ★ ★ ★ ★ 
-  From the ❤️  of Lisbon to the peaks of Pokhara,                        
-  SMAIT serves mouthwatering cuisine across 5 vibrant cities.                                                                                                               
+  From the ❤️  of Heart to the peaks of the Himalayas,                        
+  SMAIT serves mouthwatering cuisine across 4 vibrant cities of Nepal.                                                                                                               
   ✨Taste tradition, fusion, and freshness — all on one plate!         
   Visit your nearest SMAIT branch and experience                                                                                 
   global taste with local love.                                                                                                               
                                                                                                                                               
-  📍 Now serving in: Lisbon | Frankfurt | Noida | Oslo | Pokhara                                                                            
+  📍 Now serving in: Kathmandu | Butwal | Dang | Pokhara                                                                            
   🌐 Visit us: https://smaitrestaurant.com     
 
 └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────      
